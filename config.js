@@ -8,8 +8,10 @@
 'use strict';
 
 // HELPERS
+/*
 var formatDate = require('./date-helpers').formatDate,
     $x = require('./xml-helpers');
+*/
 
 /**
 * @param {"published"|"updated"} dateType Whether this feed is being generated to sort by most recently published (created time) or most recently updated (modified time)
