@@ -32,7 +32,7 @@ var atom = function (details) {
                 var stringContainer = container[elem] === 'string' && container[elem];
                 return prev + (container[elem] ?
                     (!stringContainer && container[elem].type === 'xhtml' ?
-                        $x.element(elem, level, '<div xmlns="http://www.w3.org/1999/xhtml">' + (stringContainer || container[elem].content) + '</div>') :
+                        $x.element(elem, level, '<div xmlns="http://www.w3.org/1999/xhtml">' + (container[elem].content) + '</div>') :
                         $x.element(elem, level, escapeContent(stringContainer || container[elem]))
                     ) : '');
             };
